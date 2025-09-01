@@ -1,0 +1,184 @@
+*{
+    background-color: #19a1110;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+header {
+    background-color: red;
+    width: 100%;
+    min-height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    margin: 0px 20px;
+}
+header img{
+    width: 50px;
+    height: 50px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero{
+    background-image: url("../img/people.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    min-height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.beneficios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    min-height: 600px;
+    border: 2px solid black;
+    margin: 10px 0px 10px 0px;
+    background-color: red;
+
+}
+
+.beneficios div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%}
+
+.beneficios div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.galery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    min-height: 800px;
+    background-color: red;
+}
+
+.galery div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.galery img{
+    width: 30%;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.membresia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    width: 80%;
+    min-height: 900px;
+    background-color: red;
+}
+.membresia div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.membresia div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 20px 20px;
+    width: 25%;
+    height: 400px;
+    background-color: white;
+    color: black;
+}
+.testimonios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    width: 80%;
+    min-height: 600px;
+    background-color: red;
+}
+
+.testimonios div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.testimonios div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 20px 20px;
+    width: 25%;
+    height: 400px;
+    background-color: white;
+    color: black;
+}
+.testimonios img{
+    width: 80%;
+}
