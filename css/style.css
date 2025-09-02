@@ -1,20 +1,22 @@
-*{
-    background-color: #19a1110;
-}
 body, html{
+    background-color: #461E20;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    color: white;
 }
 header {
-    background-color: red;
+    background-color: #461E20;
     width: 100%;
     min-height: 100px;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom-color:black;
+    border-bottom-style: solid;
+    border-bottom-width: 0.001em;
 }
 
 header nav{
@@ -23,7 +25,6 @@ header nav{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 header ul{
@@ -37,6 +38,17 @@ header ul{
 header ul li{
     margin: 0px 20px;
 }
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+header ul li a:hover{
+    color: gray;
+}
+
 header img{
     width: 50px;
     height: 50px;
@@ -48,20 +60,32 @@ main{
     flex-direction: column;
 }
 .hero{
-    background-image: url("../img/people.jpg");
+    background-image: url("../img/hero2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 80%;
-    min-height: 1000px;
+    min-height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
     text-align: center;
+    margin-top: 10px;
+    border-radius: 50px;
 }
 
+.hero h2{
+    font-size: 5em;
+    margin: 0px 20px;
+}
+
+.hero p{
+    font-size: 2em;
+    margin: 0px 20px;
+
+}
 .beneficios{
     display: flex;
     justify-content: center;
@@ -69,10 +93,7 @@ main{
     flex-direction: column;
     width: 80%;
     min-height: 600px;
-    border: 2px solid black;
     margin: 10px 0px 10px 0px;
-    background-color: red;
-
 }
 
 .beneficios div{
@@ -80,13 +101,33 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 100%}
+    width: 80%}
 
 .beneficios div div{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 20px 20px;
+    width: 30%;
+    height: 200px;
+    background-color: #271C1D;
+}
+
+.beneficios div div img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+}
+
+.beneficios div div h3{
+    text-align: center;
 }
 
 .galery{
@@ -95,8 +136,8 @@ main{
     justify-content: center;
     align-items: center;
     width: 80%;
-    min-height: 800px;
-    background-color: red;
+    min-height: 600px;
+    padding-bottom: 20px;
 }
 
 .galery div{
@@ -104,15 +145,15 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    width: 80%;
+    align-items: stretch;
+    align-content: stretch;
+    width: 110%;
 }
 
 .galery img{
     width: 30%;
     border-radius: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 .membresia{
@@ -169,6 +210,7 @@ main{
 .testimonios div div{
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: start;
     align-items: center;
     border: 2px solid black;
@@ -179,6 +221,78 @@ main{
     background-color: white;
     color: black;
 }
+
+.testimonios div div p{
+    text-align: justify;
+}
+
 .testimonios img{
     width: 80%;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    width: 80%;
+    min-height: 600px;
+    background-color: red;
+}
+.contacto form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.contacto form input, .contacto form textarea{
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.contacto form input[type="submit"]{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.contacto form input[type="submit"]:hover{
+    background-color: gray;
+}
+footer{
+    background-color: red;
+    width: 100%;
+    min-height: 100px;
+    color: white;
+    background-color: black;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+footer div div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: brown;
+    height: 200px;
 }
