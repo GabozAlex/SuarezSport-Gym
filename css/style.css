@@ -57,8 +57,16 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     flex-direction: column;
+    width: 100%;
 }
+
+main h2{
+    font-size: 3em;
+    margin: 10px 0px 10px 0px;
+}
+
 .hero{
     background-image: url("../img/hero2.jpg");
     background-size: cover;
@@ -154,6 +162,7 @@ main{
     width: 30%;
     border-radius: 20px;
     margin: 10px;
+    padding: 10px;
 }
 
 .membresia{
@@ -164,7 +173,6 @@ main{
     margin: 10px 0px 10px 0px;
     width: 80%;
     min-height: 900px;
-    background-color: red;
 }
 .membresia div{
     display: flex;
@@ -172,21 +180,84 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 .membresia div div{
+    margin: 0px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    border: 2px solid black;
     margin: 10px;
     padding: 20px 20px;
-    width: 25%;
-    height: 400px;
-    background-color: white;
-    color: black;
+    width: 20%;
+    height: 550px;
+    background-color: #882126;
+    color: white;
+    border-radius: 10px;
 }
+.membresia div div:focus, .membresia div div:hover{
+    outline: none;
+    height: 600px;
+    border: 5px solid red;
+    transition: ease 0.5s ;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}
+
+.membresia div div h3{
+    font-size: 2em;
+    width: 80%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.membresia div div:focus h3,
+.membresia div div:hover h3 {
+    color: red;
+    transition: color 0.5s ease;
+}
+
+.membresia div div p{
+    margin-top: 10px;
+    font-size: 1.5em;
+    text-align: justify;
+    width: 80%;
+}
+
+.membresia div div p span{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.membresia div div input{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+.membresia div div input:hover{
+    background-color: red;
+    color: black;
+    transition: 0.2;
+}
+
+.membresia div div ul{
+    width: 80%;
+    height: auto;
+    font-size: 1.5em;
+}
+
+.membresia div div ul li{
+    margi-top:10px;
+}
+
 .testimonios{
     display: flex;
     flex-direction: column;
@@ -195,7 +266,6 @@ main{
     margin: 10px 0px 10px 0px;
     width: 80%;
     min-height: 600px;
-    background-color: red;
 }
 
 .testimonios div{
@@ -204,7 +274,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 
 .testimonios div div{
@@ -213,21 +283,28 @@ main{
     flex-wrap: nowrap;
     justify-content: start;
     align-items: center;
-    border: 2px solid black;
     margin: 10px;
     padding: 20px 20px;
     width: 25%;
-    height: 400px;
-    background-color: white;
-    color: black;
+    height: 600px;
+}
+
+.testimonios div div h3{
+    margin: 10px 0px 10px 0px;
+    font-size: 2em;
 }
 
 .testimonios div div p{
     text-align: justify;
+    color: gray;;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .testimonios img{
     width: 80%;
+    border-radius: 100%;
+    margin: 10px 0px 10px 0px;
 }
 
 .contacto{
@@ -238,7 +315,8 @@ main{
     margin: 10px 0px 10px 0px;
     width: 80%;
     min-height: 600px;
-    background-color: red;
+    background-color: #882126;
+    border-radius: 20px;
 }
 .contacto form{
     display: flex;
@@ -247,28 +325,43 @@ main{
     align-items: center;
     width: 60%;
 }
+
+.contacto form label{
+    font-size: 1.5em;
+    margin: 10px 0px 10px 0px;
+    align-self: start;
+}
+
 .contacto form input, .contacto form textarea{
+    align-self: start;
     width: 100%;
+    height: 30px;
     margin: 10px 0px 10px 0px;
     padding: 10px;
     border: 1px solid black;
     border-radius: 5px;
 }
 .contacto form input[type="submit"]{
-    background-color: black;
+    background-color: red;
     color: white;
     border: none;
     cursor: pointer;
+    font-size: 1.5em;
+    width: 25%;
+    height: 50px;
+    align-self: center;
 }
 .contacto form input[type="submit"]:hover{
-    background-color: gray;
+    background-color: white;
+    color: red;
 }
 footer{
     background-color: red;
     width: 100%;
     min-height: 100px;
     color: white;
-    background-color: black;
+    background-color: #461E20;
+    border-top: 1px solid black;
 }
 
 footer div{
@@ -280,19 +373,316 @@ footer div{
     height: 100%;
 }
 
+footer h4{
+    font-size: 1.5em;
+    margin: 10px 20px 0px 20px;
+    padding: 10px;
+    color: white;
+}
+
 footer p{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: gray;
 }
 
+footer .derechos{
+    width: 100%;
+    font-size: 1.2em;
+    color: white;
+    margin: 10px 0px 10px 0px;
+}
 footer div div{
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: brown;
     height: 200px;
+}
+
+footer .redes{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    align-content: start;
+    justify-content: center;
+}
+
+footer div div img{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+/* ==========================================
+   CÓDIGO RESPONSIVE - MEDIA QUERIES
+   ========================================== */
+
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .hero {
+        width: 90%;
+        min-height: 600px;
+        border-radius: 30px;
+    }
+    
+    .hero h2 {
+        font-size: 3.5em;
+    }
+    
+    .hero p {
+        font-size: 1.5em;
+    }
+    
+    .beneficios div,
+    .testimonios div {
+        flex-wrap: wrap;
+    }
+    
+    .beneficios div div {
+        width: 45%;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .membresia div div {
+        width: 40%;
+    }
+    
+    .testimonios div div {
+        width: 40%;
+    }
+    
+    .galery img {
+        width: 45%;
+    }
+}
+
+/* Móviles grandes (576px - 768px) */
+@media screen and (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header ul li {
+        margin: var(--spacing-sm) 0;
+    }
+    
+    .hero {
+        min-height: 500px;
+        border-radius: 20px;
+    }
+    
+    .hero h2 {
+        font-size: 2.5em;
+    }
+    
+    .hero p {
+        font-size: 1.2em;
+    }
+    
+    main h2 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+    
+    .beneficios div div,
+    .membresia div div,
+    .testimonios div div {
+        width: 90%;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .galery img {
+        width: 90%;
+        margin: var(--spacing-sm) 0;
+    }
+    
+    .contacto form {
+        width: 90%;
+    }
+    
+    footer div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    footer div div {
+        margin-bottom: var(--spacing-lg);
+        height: auto;
+    }
+}
+
+/* Móviles pequeños (hasta 576px) */
+@media screen and (max-width: 576px) {
+    .hero {
+        width: 95%;
+        min-height: 400px;
+        border-radius: 15px;
+    }
+    
+    .hero h2 {
+        font-size: 2em;
+        margin: 0 10px;
+    }
+    
+    .hero p {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+    
+    main h2 {
+        font-size: 1.8em;
+    }
+    
+    .beneficios div div,
+    .membresia div div,
+    .testimonios div div {
+        width: 95%;
+        height: auto;
+        padding: var(--spacing-md);
+    }
+    
+    .membresia div div:focus, 
+    .membresia div div:hover {
+        height: auto;
+        transform: scale(1.02);
+    }
+    
+    .membresia div div h3 {
+        font-size: 1.5em;
+    }
+    
+    .membresia div div p {
+        font-size: 1.2em;
+    }
+    
+    .membresia div div ul {
+        font-size: 1.2em;
+    }
+    
+    .testimonios div div {
+        height: auto;
+    }
+    
+    .testimonios div div p {
+        font-size: 1.2em;
+    }
+    
+    .contacto {
+        width: 95%;
+        padding: var(--spacing-md);
+    }
+    
+    .contacto form input[type="submit"] {
+        width: 50%;
+    }
+    
+    footer .redes {
+        justify-content: center;
+    }
+}
+
+/* Ajustes para orientación horizontal en móviles */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: 300px;
+    }
+    
+    .hero h2 {
+        font-size: 2em;
+    }
+    
+    .hero p {
+        font-size: 1em;
+    }
+}
+
+/* Mejoras para tablets en orientación vertical */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+    .beneficios div div {
+        width: 90%;
+    }
+    
+    .membresia div div {
+        width: 80%;
+    }
+}
+
+/* Ajustes para pantallas muy grandes */
+@media screen and (min-width: 1600px) {
+    .contenedor {
+        max-width: 1400px;
+    }
+}
+
+/* Prevención de zoom en inputs en iOS */
+@media screen and (max-width: 768px) {
+    input, select, textarea {
+        font-size: 16px !important;
+    }
+}
+
+/* Mejora de legibilidad en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    h1, h2, h3, h4 {
+        line-height: 1.3;
+    }
+}
+
+/* Ajustes de navegación para móviles */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: var(--spacing-sm);
+    }
+    
+    header img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    header h1 {
+        font-size: 1.5em;
+    }
+}
+
+/* Optimización de imágenes en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .galery img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .testimonios img {
+        width: 60%;
+    }
+}
+
+/* Ajustes para el formulario en móviles */
+@media screen and (max-width: 576px) {
+    .contacto form label {
+        font-size: 1.2em;
+    }
+    
+    .contacto form input, 
+    .contacto form textarea {
+        width: 90%;
+        height: 25px;
+        font-size: 14px;
+    }
+    
+    .contacto form input[type="submit"] {
+        height: 40px;
+        font-size: 1.2em;
+    }
 }

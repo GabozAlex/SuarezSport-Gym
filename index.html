@@ -13,11 +13,6 @@
             <ul>
                 <li><img src="img/logo-solo.png" alt="logo-suaressport"></li>
                 <li><h1>Suarez Sport</h1></li>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Clases</a></li>
-                <li><a href="#">Entrenadores</a></li>
-                <li><a href="#">Instalaciones</a></li>
-                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -57,20 +52,20 @@
         <section class="membresia">
             <h2>Planes de Membresia</h2>
             <div>
-                <div>
+                <div tabindex="0">
                     <h3>Basico</h3>
-                    <p>$20/mes</p>
-                    <input type="button" value="seleccionar">
+                    <p><span>$20</span>/mes</p>
+                    <input type="button" value="Seleccionar">
                     <ul>
                         <li>Acceso a todas las instalaciones</li>
                         <li>Clases grupales</li>
                         <li>Evolucion fisica</li>
                     </ul>
                 </div>
-                <div>
+                <div tabindex="0">
                     <h3>Premiun</h3>
-                    <p>$49/mes</p>
-                    <input type="button" value="seleccionar">
+                    <p><span>$49</span>/mes</p>
+                    <input type="button" value="Seleccionar">
                     <ul>
                         <li>Acceso a todas las instalaciones</li>
                         <li>Clases grupales</li>
@@ -78,10 +73,10 @@
                         <li>Entrenamiento personalizado</li>
                     </ul>
                 </div>
-                <div>
+                <div tabindex="0">
                     <h3>Vip</h3>
-                    <p>$79/mes</p>
-                    <input type="button" value="seleccionar">
+                    <p><span>$79</span>/mes</p>
+                    <input type="button" value="Seleccionar">
                     <ul>
                         <li>Acceso a todas las instalaciones</li>
                         <li>Clases grupales</li>
@@ -114,7 +109,7 @@
         </section>
         <section class="contacto">
             <h2>Contacto</h2>
-            <form action="#">
+            <form action="https://formsubmit.co/gaboalex9@gmail.com" method="post">
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" placeholder="Nombre" required>
                 <label for="email">Correo Electronico</label>
@@ -128,31 +123,33 @@
     <footer>
         <div>
             <div>
-            <h4>SuarezSport Gym</h4>
-            <p>Tranforma tu cuerpo, transforma tu vida.</p>
+                <h4>SuarezSport Gym</h4>
+                <p>Tranforma tu cuerpo, transforma tu vida.</p>
             </div>
             <div>
                 <h4>Contacto</h4>
                 <p>
-                    Direccion:
-                    Telefono:
+                    Direccion: Calle Camino Real, Paraguachí 6317, Nueva Esparta <br> <br>
+                    Telefono: +58-414-8287893 <br>
                 </p>
             </div>
             <div>
                 <h4>Horario</h4>
                 <p>
-                    Lunes a Viernes: 6:00 AM - 10:00 PM
+                    Lunes a Viernes: 6:00 AM - 10:00 PM <br> <br>
                     Sabado y Domingo: 8:00 AM - 8:00 PM
                 </p>
             </div>
             <div>
                 <h4>Siguenos</h4>
-                <a href="#"><img src="" alt="Instagram"></a>
-                <a href="#"><img src="" alt="Facebook"></a>
-                <a href="#"><img src="" alt="SuarezSport"></a>
+                <div class="redes">
+                    <a href="https://www.instagram.com/suarez_sport/followers/mutualOnly"><img src="img/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100066950703273"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.suarezsport.vercel.app"><img src="img/web.png" alt="SuarezSport"></a>
+                </div>
             </div>
         </div>
-        <p>Derechos reservados &copy; 2024</p>
+        <p class="derechos">Derechos reservados &copy; 2024</p>
     </footer>
 </body>
 </html>
